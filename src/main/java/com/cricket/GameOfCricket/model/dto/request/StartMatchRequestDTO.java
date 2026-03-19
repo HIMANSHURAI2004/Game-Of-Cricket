@@ -20,6 +20,6 @@ public class StartMatchRequestDTO {
     private String teamBId;
 
     @Min(value = 1, message = "Overs should be greater than 0")
-    private int overs;
+    private int maxOvers;
 
 }

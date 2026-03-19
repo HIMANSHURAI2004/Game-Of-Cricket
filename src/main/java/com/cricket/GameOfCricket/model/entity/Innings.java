@@ -22,8 +22,6 @@ public class Innings {
 
     private String bowlingTeam;
 
-    private int maxOvers;
-
     private int targetScore;
 
     private int totalRuns;

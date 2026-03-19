@@ -1,7 +1,9 @@
 package com.cricket.GameOfCricket.model.dto.response;
 
 
+import com.cricket.GameOfCricket.model.entity.MatchResult;
 import com.cricket.GameOfCricket.model.entity.Toss;
+import com.cricket.GameOfCricket.model.enums.MatchStatus;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
@@ -23,11 +25,15 @@ public class MatchResponseDTO {
 
     private TossResponseDTO toss;
 
-    private InningsResponseDTO firstInnings;
+    private int maxOvers;
 
-    private InningsResponseDTO secondInnings;
+    private String firstInningsId;
 
-    private MatchResultResponseDTO result;
+    private String secondInningsId;
+
+    private MatchResult result;
+
+    private MatchStatus status;
 
 
 }

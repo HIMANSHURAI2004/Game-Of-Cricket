@@ -16,17 +16,14 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class InningsResponseDTO {
-    private int inningsNumber;
+
+    private String inningsId;
 
     private String battingTeam;
 
     private String bowlingTeam;
 
-    private int maxOvers;
-
     private int targetScore;
-
-    private List<Over> overs;
 
     private int totalRuns;
 

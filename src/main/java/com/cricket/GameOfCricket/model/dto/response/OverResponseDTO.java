@@ -16,7 +16,11 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class OverResponseDTO {
+    private String id;
+
     private int overNumber;
+
+    private String inningsId;
 
     private String bowler;
 
@@ -25,7 +29,5 @@ public class OverResponseDTO {
     private int runsInOver;
 
     private int wicketsInOver;
-
-    private boolean isMaiden;
 
 }

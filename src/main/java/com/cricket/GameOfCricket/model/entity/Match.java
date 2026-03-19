@@ -26,9 +26,11 @@ public class Match {
 
     private Toss toss;
 
-    private String firstInnings;
+    private int maxOvers;
 
-    private String secondInnings;
+    private String firstInningsId;
+
+    private String secondInningsId;
 
     private MatchResult result;
 

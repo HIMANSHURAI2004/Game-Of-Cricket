@@ -22,5 +22,5 @@ public class Player {
 
     private PlayerRole role;
 
-    private List<String> teamId;
+    private List<String> teamIds;
 }
