@@ -19,7 +19,4 @@ public class CreatePlayerRequestDTO {
 
     @NotNull(message = "Role is required")
     private PlayerRole role;
-
-    @NotNull(message = "Team Id is required")
-    private List<String> teamId;
 }

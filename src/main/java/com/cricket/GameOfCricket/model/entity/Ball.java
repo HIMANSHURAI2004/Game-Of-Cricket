@@ -14,7 +14,7 @@ public class Ball {
 
     private int ballNumberInOver;
 
-    private String Striker;
+    private String striker;
 
     private String bowler;
 

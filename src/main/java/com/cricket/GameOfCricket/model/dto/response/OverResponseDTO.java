@@ -24,7 +24,7 @@ public class OverResponseDTO {
 
     private String bowler;
 
-    private List<BallResponseDTO> balls;
+    private List<Ball> balls;
 
     private int runsInOver;
 

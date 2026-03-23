@@ -3,7 +3,6 @@ package com.cricket.GameOfCricket.model.dto.response;
 import com.cricket.GameOfCricket.model.entity.BattingScoreCard;
 import com.cricket.GameOfCricket.model.entity.BowlingScoreCard;
 import com.cricket.GameOfCricket.model.entity.FallOfWicket;
-import com.cricket.GameOfCricket.model.entity.Over;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,16 +11,16 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-public class InningsResponseDTO {
+public class InningsDetailResponseDTO {
 
-    private String inningsId;
+    private String battingTeam;
 
-    private String battingTeamId;
+    private String bowlingTeam;
 
-    private String bowlingTeamId;
+    private int maxOvers;
 
     private int targetScore;
 
@@ -31,14 +30,15 @@ public class InningsResponseDTO {
 
     private int totalExtras;
 
-    private int legalBallsBowled;
+    private int oversPlayed;
 
+    private List<BattingScoreCard> battingCard;
 
-    private List<BattingScoreCard>battingCards;
+    private List<BowlingScoreCard> bowlingCard;
 
-    private List<BowlingScoreCard>bowlingCards;
+    private List<FallOfWicket> fallOfWickets;
 
-    private List<FallOfWicket>fallOfWickets;
+    private List<OverResponseDTO> overs;
 
     private boolean isComplete;
 }

@@ -18,9 +18,9 @@ public class Innings {
     @Id
     private String id;
 
-    private String battingTeam;
+    private String battingTeamId;
 
-    private String bowlingTeam;
+    private String bowlingTeamId;
 
     private int targetScore;
 
@@ -32,17 +32,11 @@ public class Innings {
 
     private int legalBallsBowled;
 
-    private String currentStriker;
-
-    private String currentNonStriker;
-
-    private String currentBowler;
-
-    private int nextBatsmanIndex;
-
     private List<BattingScoreCard>battingCards;
 
     private List<BowlingScoreCard>bowlingCards;
 
     private List<FallOfWicket>fallOfWickets;
+
+    private boolean isComplete;
 }

@@ -22,5 +22,4 @@ public class PlayerResponseDTO {
 
     private PlayerRole role;
 
-    private List<String>teamIds;
 }

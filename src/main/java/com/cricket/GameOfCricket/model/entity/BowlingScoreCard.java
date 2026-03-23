@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class BowlingScoreCard {
 
-    private String player;
+    private String playerId;
 
     private int ballsBowled;
 

@@ -1,20 +1,23 @@
 package com.cricket.GameOfCricket.model.dto.response;
 
+import com.cricket.GameOfCricket.model.enums.TeamType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class FallOfWicketsResponseDTO {
-    private int wicketNumber;
+public class TeamResponseWithIdsDTO {
+    private String id;
 
-    private String playerOut;
+    private String name;
 
-    private int teamScoreAtFall;
+    private TeamType type;
 
-    private int legalBallsAtFall;
+    List<String> playerIds;
 }

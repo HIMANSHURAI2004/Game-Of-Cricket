@@ -1,6 +1,8 @@
 package com.cricket.GameOfCricket.model.enums;
 
 public enum MatchStatus {
-    IN_PROGRESS,
+    TOSS_DONE,
+    FIRST_INNINGS,
+    SECOND_INNINGS,
     COMPLETED
 }

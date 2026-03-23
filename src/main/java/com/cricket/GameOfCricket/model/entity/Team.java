@@ -22,4 +22,6 @@ public class Team {
     private String name;
 
     private TeamType type;
+
+    List<String> playerIds;
 }

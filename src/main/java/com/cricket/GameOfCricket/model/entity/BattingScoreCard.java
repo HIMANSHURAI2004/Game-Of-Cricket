@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class BattingScoreCard {
 
-    private String player;
+    private String playerId;
 
     private int runsScored;
 
@@ -26,5 +26,5 @@ public class BattingScoreCard {
 
     private boolean isOut;
 
-    private String dismissedBy;
+    private Player dismissedBy;
 }

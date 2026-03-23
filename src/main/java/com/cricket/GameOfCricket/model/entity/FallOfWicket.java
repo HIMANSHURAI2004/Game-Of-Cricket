@@ -14,7 +14,7 @@ public class FallOfWicket {
 
     private int wicketNumber;
 
-    private String playerOut;
+    private Player playerOut;
 
     private int teamScoreAtFall;
 

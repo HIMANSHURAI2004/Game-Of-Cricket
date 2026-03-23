@@ -11,7 +11,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class TossResponseDTO {
+
     private String winner;
 
     private TossDecision decision;
